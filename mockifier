@@ -1,0 +1,13 @@
+sentence = 'One more exercise, and then you can relax.'
+new_sentence = ''
+secondChar = False
+
+for char in sentence:
+    if secondChar:
+        new_sentence += char.lower()
+        secondChar = False
+    else:
+        new_sentence += char.upper()
+        secondChar = True
+        
+print(new_sentence)
